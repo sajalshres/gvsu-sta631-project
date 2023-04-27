@@ -83,20 +83,20 @@ get_recommendation_by_movies <-
   }
 
 load_data <- function(name) {
-  data <- readRDS(paste0("../data/", name, ".Rds"))
+  data <- readRDS(paste0("data/", name, ".Rds"))
   return(data)
 }
 
 load_movies <- function() {
   data <-
-    read.csv("../data/movies.csv",
+    read.csv("data/movies.csv",
              header = TRUE,
              stringsAsFactors = FALSE)
   return(data)
 }
 
 load_ratings <- function() {
-  data <- read.csv("../data/ratings.csv", header = TRUE)
+  data <- read.csv("data/ratings.csv", header = TRUE)
 
   return(data)
 }

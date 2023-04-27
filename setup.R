@@ -9,7 +9,9 @@ packages <- c(
   "waiter",
   "plumber",
   "DT",
-  "argparse"
+  "argparse",
+  "reshape2",
+  "recommenderlab"
 )
 
 # Find installed packages
@@ -23,3 +25,9 @@ if (any(is_packages_installed == FALSE)) {
 
 # Load packages
 invisible(lapply(packages, library, character.only = TRUE))
+
+# Create symlinks for app
+createLink(
+  link = paste0(getwd(), "/app/data"),
+  target = paste0(getwd(), "/data")
+)

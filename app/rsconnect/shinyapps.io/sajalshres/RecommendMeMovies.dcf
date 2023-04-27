@@ -1,0 +1,13 @@
+name: RecommendMeMovies
+title: RecommendMeMovies
+username:
+account: sajalshres
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8971458
+bundleId: 7144037
+url: https://sajalshres.shinyapps.io/RecommendMeMovies/
+when: 1682612455.62742
+lastSyncTime: 1682612455.62745
+asMultiple: FALSE
+asStatic: FALSE
