@@ -1,10 +1,3 @@
-infoItems <- fluidRow(
-  box(title="box", width=3),
-  box(title="box", width=3),
-  box(title="box", width=3),
-  box(title="box", width=3),
-)
-
 # row recommend by User
 recommendByUserId <- fluidRow(
   box(
@@ -31,7 +24,6 @@ recommendByUserId <- fluidRow(
 recommendByUserItem <- function() {
   return(tabItem(
     tabName = "recommendByUser",
-    infoItems,
     recommendByUserId
   ))
 }

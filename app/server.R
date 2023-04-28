@@ -41,7 +41,7 @@ server <- function(input, output, session) {
     session,
     'movieInputOne',
     choices = as.character(movies$title[1:length(unique(movies$movieId))]),
-    selected = "Shawshank Redemption, The (1994)",
+    selected = "Happy Gilmore (1996)",
     server = TRUE
   )
 
@@ -49,7 +49,7 @@ server <- function(input, output, session) {
     session,
     'movieInputTwo',
     choices = as.character(movies$title[1:length(unique(movies$movieId))]),
-    selected = "Forrest Gump (1994)",
+    selected = "Pulp Fiction (1994)",
     server = TRUE
   )
 
@@ -57,7 +57,7 @@ server <- function(input, output, session) {
     session,
     'movieInputThree',
     choices = as.character(movies$title[1:length(unique(movies$movieId))]),
-    selected = "Silence of the Lambs, The (1991)",
+    selected = "Dragonheart (1996)",
     server = TRUE
   )
 
